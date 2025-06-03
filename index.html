@@ -64,10 +64,10 @@
       const remainderMinutes = Math.floor((totalSeconds % 3600) / 60);
       const remainderSeconds = totalSeconds % 60;
 
-      document.getElementById("daysTimer").innerText = `D:${String(days).padStart(2, '0')}:${String(remainderHours).padStart(2, '0')}:${String(remainderMinutes).padStart(2, '0')}:${String(remainderSeconds).padStart(2, '0')}`;
-      document.getElementById("hoursTimer").innerText = `HHH:${String(hours).padStart(3, '0')}:${String(remainderMinutes).padStart(2, '0')}:${String(remainderSeconds).padStart(2, '0')}`;
-      document.getElementById("minutesTimer").innerText = `MMMM:${String(minutes).padStart(4, '0')}:${String(remainderSeconds).padStart(2, '0')}`;
-      document.getElementById("secondsTimer").innerText = `SSSSSSS:${String(seconds).padStart(7, '0')}`;
+      document.getElementById("daysTimer").innerText = `Days:${String(days).padStart(2, '0')}:${String(remainderHours).padStart(2, '0')}:${String(remainderMinutes).padStart(2, '0')}:${String(remainderSeconds).padStart(2, '0')}`;
+      document.getElementById("hoursTimer").innerText = `Hours:${String(hours).padStart(3, '0')}:${String(remainderMinutes).padStart(2, '0')}:${String(remainderSeconds).padStart(2, '0')}`;
+      document.getElementById("minutesTimer").innerText = `Minutes:${String(minutes).padStart(4, '0')}:${String(remainderSeconds).padStart(2, '0')}`;
+      document.getElementById("secondsTimer").innerText = `Seconds:${String(seconds).padStart(7, '0')}`;
     }
 
     setInterval(updateCountdown, 1000);
