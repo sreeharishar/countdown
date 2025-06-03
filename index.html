@@ -35,7 +35,7 @@
   </style>
 </head>
 <body>
-  <h1>Countdown to Wednesday 06/11 4:30 PM</h1>
+  <h1>Countdown to Wednesday <br /> 06/11 4:30 PM</h1>
   <div class="timer" id="daysTimer"></div>
   <div class="timer" id="hoursTimer"></div>
   <div class="timer" id="minutesTimer"></div>
@@ -48,10 +48,10 @@
       const totalSeconds = Math.floor((targetDate - now) / 1000);
 
       if (totalSeconds <= 0) {
-        document.getElementById("daysTimer").innerText = "D:00:00:00";
-        document.getElementById("hoursTimer").innerText = "HHH:00:00";
-        document.getElementById("minutesTimer").innerText = "MMMM:00";
-        document.getElementById("secondsTimer").innerText = "SSSSSSS";
+        document.getElementById("daysTimer").innerText = "Days:00:00:00";
+        document.getElementById("hoursTimer").innerText = "Hours:00:00";
+        document.getElementById("minutesTimer").innerText = "Minutes:00";
+        document.getElementById("secondsTimer").innerText = "Seconds";
         return;
       }
 
